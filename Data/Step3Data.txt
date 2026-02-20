@@ -1,0 +1,110 @@
+Journal
+Key: Inclezan2015
+Author: Daniela Inclezan
+Title: An Application of ASP to the Field of Second Language Acquisition
+Journal: Journal of Theory and Practice of Logic Programming
+Publisher: Cambridge University Press
+Date: 2015
+Volume: 15
+Number: 1
+Book
+Key: Norris2013
+Author: Elizabeth Norris
+Title: Unbreakable
+Publisher: Harper Collins Publishers
+Date: 2013
+Book
+Key: Rowling1997
+Author: J.K. Rowling
+Title: Harry Potter and the Philosopher's Stone
+Publisher: Bloomsbury Publishing
+Date: 1997
+Conference
+Key: Abernethy2000
+Author: Ken Abernethy, John Kelly, Ann Sobel, James Kiper
+Title: Technology transfer issues for formal methods of software specification
+Conference: Thirteenth Conference on Software Engineering Education & Training
+Date: March 6-8, 2000.
+Location: Austin, Texas
+Pages: 23 - 31
+Book
+Key: Dickens1894
+Author: Charles Dickens
+Title: A tale of two cities
+Publisher: Dodd, Mead
+Date: 1894
+Journal
+Key: Kiper1992
+Author: James Kiper
+Title: Structural testing of rule-based expert systems
+Journal: ACM Transactions on SE & Methodology
+Publisher: ACM
+Date: 1992
+Volume: 8
+Number: 2
+Book
+Key: Pirsig1974
+Author: Robert Pirsig
+Title: Zen and the Art of Motorcycle Maintenance
+Publisher: Morrow
+Date: 1974
+Journal
+Key: Kiper1996
+Author: James Kiper, Lizz Howard, Chuck Ames
+Title: Criteria for Evaluation of Visual Prog. Langs
+Journal: Journal of Visual Languages & Computing
+Publisher: Elsevier
+Date: 1996
+Volume: 8
+Number: 2
+Book
+Key: Hugo1941
+Author: Victor Hugo
+Title: The hunchback of Notre Dame
+Publisher: The Modern library
+Date: 1941
+Conference
+Key: Brinkman2009
+Author: Bo Brinkman
+Title: The Heart of a Whistle-blower: A Corporate Decision-Making Game for Computer Ethics Classes
+Conference: 40th ACM Technical Symposium on Computer Science Education (SIGCSE)
+Date: March 4-7, 2009 
+Location: Chattanooga, TN
+Pages: 316-320
+Conference
+Key: Brinkman2007
+Author: Bo Brinkman, Valerie Cross, and Lucasz Opyrchal
+Title: Enhancing Undergraduate Computer Science Education Through a University-wide Summer Research Program
+Conference: 37th Annual Frontiers in Education Conference (FIE)
+Date: October 10-13, 2007 
+Location: Milwaukee, Wisconsin
+Pages: S4B-1 – S4B-6
+Book
+Key: Troy1989
+Author: Doug Troy, James Kiper
+Title: The C programming language
+Publisher: Scott, Foresman
+Date: 1989
+Book
+Key: Lewis1952
+Author: C.S. Lewis
+Title: Mere Christianity
+Publisher: Macmillan
+Date: 1952
+Conference
+Key: Inclezan2014
+Author: Daniela Inclezan, Luis Pradanos
+Title: Promoting Ecoliteracy in an Introductory Database Systems Course: Activities for the First Week
+Conference: 45th ACM Technical Symposium on Computer Science Education (SIGCSE 2014)
+Date: March 3-5, 2014
+Location: Denver, Colorado 
+Pages: 573-578
+Journal
+Key: Brinkman2012
+Author: Bo Brinkman
+Title: An Analysis of Student Privacy Rights in the Use of Plagiarism Detection Systems
+Journal: Science and Engineering Ethics
+Publisher: Springer 
+Date: 2012 
+Volume: 20
+Number: 1

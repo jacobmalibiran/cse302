@@ -1,0 +1,36 @@
+Book
+Key: Norris2013
+Author: Elizabeth Norris
+Title: Unbreakable
+Publisher: Harper Collins Publishers
+Date: 2013
+Book
+Key: Rowling1997
+Author: J.K. Rowling
+Title: Harry Potter and the Philosopher's Stone
+Publisher: Bloomsbury Publishing
+Date: 1997
+Book
+Key: Dickens1894
+Author: Charles Dickens
+Title: A tale of two cities
+Publisher: Dodd, Mead
+Date: 1894
+Book
+Key: Pirsig1974
+Author: Robert Pirsig
+Title: Zen and the Art of Motorcycle Maintenance
+Publisher: Morrow
+Date: 1974
+Book
+Key: Hugo1941
+Author: Victor Hugo
+Title: The hunchback of Notre Dame
+Publisher: The Modern library
+Date: 1941
+Book
+Key: Lewis1952
+Author: C.S. Lewis
+Title: Mere Christianity
+Publisher: Macmillan
+Date: 1952
