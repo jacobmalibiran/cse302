@@ -27,7 +27,9 @@ public class WordDealUtilTest {
 	@Test
 	public void wordEormat4DBNormal()
 	{
-		// add code here
+		String target = "employeeInfo";
+		String result = wordDealUtil.wordFormat4DB(target);
+		System.out.println(result);
 	
 	}
 	// Test wordEormat4DB with normal condition
