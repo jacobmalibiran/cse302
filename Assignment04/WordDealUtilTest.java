@@ -43,7 +43,9 @@ public class WordDealUtilTest {
 	@Test
 	public void wordEormat4DBEmpty()
 	{
-		//add code here
+		String target = "";
+		String result = wordDealUtil.wordFormat4DB(target);
+		assertEquals("", target);
 	
 	}
 	
