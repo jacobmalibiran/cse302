@@ -7,27 +7,37 @@ import java.lang.Math;
 import java.util.List;
 import java.util.ArrayList;
 
+import java.util.Random;
+
 public class TurtleSoup {
 
     /**
      * Draw a square.
-     * 
+     *
      * @param turtle the turtle context
      * @param sideLength length of each side
      */
     public static void drawSquare(Turtle turtle, int sideLength) {
-        throw new RuntimeException("implement me!");
+
+        /**
+         * Determine inside angles of a regular polygon.
+         *
+         * There is a simple formula for calculating the inside angles of a polygon;
+         * you should derive it and use it here.
+         *
+         * @param sides number of sides, where sides must be > 2
+         * @return angle in degrees, where 0 <= angle < 360
+         */
+        final int degrees = 90;
+        for (int i = 0; i < 4; i++) {
+            turtle.forward(sideLength);
+            turtle.turn(degrees);
+        }
+
     }
 
-    /**
-     * Determine inside angles of a regular polygon.
-     * 
-     * There is a simple formula for calculating the inside angles of a polygon;
-     * you should derive it and use it here.
-     * 
-     * @param sides number of sides, where sides must be > 2
-     * @return angle in degrees, where 0 <= angle < 360
-     */
+
+
     public static double calculateRegularPolygonAngle(int sides) {
         throw new RuntimeException("implement me!");
     }
@@ -108,18 +118,31 @@ public class TurtleSoup {
      * @param turtle the turtle context
      */
     public static void drawPersonalArt(Turtle turtle) {
-        throw new RuntimeException("implement me!");
+
+        /**
+         * Main method.
+         *
+         * This is the method that runs when you run "java TurtleSoup".
+         */
+
+        PenColor[] colors = {PenColor.RED, PenColor.PINK, PenColor.ORANGE, PenColor.YELLOW, PenColor.GREEN, PenColor.CYAN, PenColor.BLUE, PenColor.MAGENTA};
+        for (int i = 1; i < 999999; i++) {
+            Random rand = new Random();
+            turtle.color(   colors[rand.nextInt(colors.length)]    );
+            drawSquare(turtle, rand.nextInt(100));
+            turtle.turn(144);
+        }
     }
 
-    /**
-     * Main method.
-     * 
-     * This is the method that runs when you run "java TurtleSoup".
-     */
+
+
     public static void main(String args[]) {
         DrawableTurtle turtle = new DrawableTurtle();
 
-        drawSquare(turtle, 40);
+       // drawSquare(turtle, 40);
+        //drawSquare(turtle, 200);
+        drawPersonalArt(turtle);
+
 
         // draw the window
         turtle.draw();
