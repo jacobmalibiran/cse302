@@ -98,10 +98,10 @@ public class TurtleSoup {
         assertTrue(sides > MAX_SIDES_WITHOUT_POLYGON);
         assertTrue(sideLength > 0);
 
-        final double DEGREES_IN_ANGLE = calculateRegularPolygonAngle(sides);
+        final double DEGREES_PER_ANGLE = 180.0 - calculateRegularPolygonAngle(sides);
 
         for (int i = 0; i < sides; i++) {
-            turtle.turn(DEGREES_IN_ANGLE);
+            turtle.turn(DEGREES_PER_ANGLE);
             turtle.forward(sideLength);
         }
     }
@@ -196,10 +196,10 @@ public class TurtleSoup {
          */
 
         PenColor[] colors = {PenColor.RED, PenColor.PINK, PenColor.ORANGE, PenColor.YELLOW, PenColor.GREEN, PenColor.CYAN, PenColor.BLUE, PenColor.MAGENTA};
-        for (int i = 1; i < 999999; i++) {
+        for (int i = 1; i < 99999; i++) {
             Random rand = new Random();
             turtle.color(   colors[rand.nextInt(colors.length)]    );
-            drawSquare(turtle, rand.nextInt(100));
+            drawRegularPolygon(turtle, 15, rand.nextInt(1, 100));
             turtle.turn(144);
         }
     }
@@ -209,7 +209,7 @@ public class TurtleSoup {
     public static void main(String args[]) {
         DrawableTurtle turtle = new DrawableTurtle();
 
-       // drawSquare(turtle, 40);
+        //drawSquare(turtle, 40);
         //drawSquare(turtle, 200);
         drawPersonalArt(turtle);
 
