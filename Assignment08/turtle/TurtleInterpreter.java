@@ -12,6 +12,7 @@ public class TurtleInterpreter {
     private final DrawableTurtle turtle = new DrawableTurtle();
     private Scanner scanner;
 
+    // Constructor for the class to allow for passing a file to the scanner
     TurtleInterpreter(File file) {
         try {
             this.scanner = new Scanner(file);
@@ -20,6 +21,7 @@ public class TurtleInterpreter {
         }
     }
 
+    // throws an error if the expected file pattern is not followed
     void expect(String expectedToken) {
         String actual = scanner.next();
         if (!actual.equals(expectedToken)) {
@@ -57,6 +59,8 @@ public class TurtleInterpreter {
         }
     }
 
+    // Helper to loop()
+    // returns block tokens for the given loop
     ArrayList<String> getBlockTokens() {
         ArrayList<String> tokens = new ArrayList<>();
 
@@ -66,14 +70,25 @@ public class TurtleInterpreter {
             throw new RuntimeException("Expected 'begin' but got '" + token + "'");
         }
 
-        while (!token.equals("end")) {
-            tokens.add(token);
-            token = scanner.next();
-        }
+        int depth = 1;
         tokens.add(token);
+
+        while (depth > 0) {
+            if (!scanner.hasNext()) {
+                throw new RuntimeException("Missing 'end' for loop block");
+            }
+
+            token = scanner.next();
+            tokens.add(token);
+
+            if (token.equals("begin")) depth++;
+            else if (token.equals("end")) depth--;
+        }
         return tokens;
     }
 
+    // Helper to loop()
+    // Executes the block of tokens without removing them from the original scanner
     void runBlockTokens(ArrayList<String> blockTokens) {
         Scanner original = scanner;
         scanner = new Scanner(String.join(" ", blockTokens));
